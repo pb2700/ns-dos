@@ -1,0 +1,131 @@
+
+  body {
+    background-color: #000;
+    font-family: monospace;
+  }
+  .container{
+    position: relative;
+    border: solid blue;
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: #00a;
+  }
+   .window1{
+     display: flex;
+     width: 300px;
+     border: solid white;
+     flex: 0 1 auto;
+     height: auto;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 40px;
+     background-color: #666;
+     box-shadow: 10px 10px;
+     margin-bottom: 40px;
+     margin-top: 40px;
+   }
+   .window2{
+     display: flex;
+     width: 300px;
+     border: solid white;
+     flex: 0 1 auto;
+     height: auto;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 40px;
+     background-color: #666;
+     box-shadow: 10px 10px;
+   }
+   .button{
+     position: relative;
+     display: inline-block;
+     width: auto;
+     margin: 20px;
+     margin-top: 30px;
+     padding: 10px;
+     border: outset 5px;
+   }
+   .button:hover{
+     background-color: #444;
+     cursor: pointer;
+     border-style: inset;
+     color: #fff;
+   }
+   .dialog_text{
+     position: relative;
+     display: inline-block;
+   }
+   .options{
+     display: flex;
+     flex-direction: column;
+   }
+   .status_bar{
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 20px;
+     background-color: #666;
+     border-bottom: solid 1px #fff;
+     display: flex;
+     justify-content: space-between;
+     padding: 0 5px;
+     box-sizing: border-box;
+   }
+   .load_bar{
+     position: relative;
+     display: inline-block;
+     border: solid;
+     background: repeating-linear-gradient(
+       45deg, #cdff00 0px, #cdff00 10px, #21a53d 10px, #21a53d 20px
+     );
+     animation-name: scroll;
+     animation-duration: 0.6s;
+     animation-iteration-count: infinite;
+     width: 169px;
+     height: 21px;
+     animation-timing-function: linear;
+     margin: 10px;
+     margin-top: 25px;
+   }
+   .hide{
+     display: none;
+   }
+   @keyframes scroll{
+     100% {
+       background-position: 28px 0;
+     }
+   }
+  .login_input{
+    outline: none;
+    border: solid 5px #888;
+    border-style: inset;
+    margin: 20px;
+  }
+  .submit_button{
+    outline: none;
+    border: solid 5px #888;
+    border-style: outset;
+    padding: 5px;
+  }
+  .submit_button:hover{
+    cursor: pointer;
+  }
+  .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .end_screen{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+  }
