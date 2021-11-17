@@ -5,6 +5,7 @@ const dialogText = document.querySelector('.dialog_text')
 const mainWindow = document.querySelector('.window1')
 const startWindow = document.querySelector('.window2')
 const endScreen = document.querySelector('.end_screen')
+const userInput = document.querySelector('.login_input')
 let userName = ''
 let nextStepIndex = 0
 
@@ -94,11 +95,11 @@ const clickOption = (id) =>{
 const startGame = ()=>{
   startWindow.classList.add('hide')
   mainWindow.classList.remove('hide')
-  userName = document.querySelector('.login_input').value
+  userName = userInput.value
   displayStep(2)
 }
 
-userName = ''
+userInput.value = ''
 document.querySelector(".submit_button").addEventListener("click", () => {startGame()})
 document.querySelector(".ok_button").addEventListener("click", () => {goNextStep()})
 displayStep(0)
