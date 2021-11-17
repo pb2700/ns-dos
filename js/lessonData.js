@@ -24,7 +24,7 @@ export const lessonData = {
     {id: 110, text: 'Quantizing matrix shield modulator...', target: 140, type: 'load'},
     {id: 120, text: 'Recompiling spectral matrix processor...', target: 150, type: 'load'},
     {id: 130, text: 'Plasma stream has been reconfigured.', target: 160, type: 'normal'},
-    {id: 140, text: 'Matrix shield modulator has completed quatization.', target: 160, type: 'normal'},
+    {id: 140, text: 'Matrix shield modulator has completed quantization.', target: 160, type: 'normal'},
     {id: 150, text: 'Spectral Matrix Processor has completed recompiling.', target: 160, type: 'normal'},
     {id: 160, text: 'You have succesfully configured the system.', target: 170, type: 'normal'},
     {id: 170, text: 'The system will now begin shutdown.', target: 180, type: 'normal'},
