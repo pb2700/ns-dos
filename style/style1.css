@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: center;
     background-color: #00a;
+    height: 95vh;
+    display: flex;
+    align-items: center;
   }
    .window1{
      display: flex;
